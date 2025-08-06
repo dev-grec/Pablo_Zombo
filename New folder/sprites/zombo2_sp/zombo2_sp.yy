@@ -5,7 +5,7 @@
   "bbox_bottom":14,
   "bbox_left":3,
   "bbox_right":12,
-  "bbox_top":1,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -14,7 +14,7 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"6439771f-9a75-409f-b46e-c04cc45d3a6d","name":"6439771f-9a75-409f-b46e-c04cc45d3a6d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"8b46c50f-1b76-47b5-90aa-beb4265c67c7","name":"8b46c50f-1b76-47b5-90aa-beb4265c67c7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7d32b462-201d-4416-8d6b-e7082b19a7c7","name":"7d32b462-201d-4416-8d6b-e7082b19a7c7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"1fd75fd3-e246-4ce3-a72f-0389aeae2368","name":"1fd75fd3-e246-4ce3-a72f-0389aeae2368","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"e2011751-41c0-488a-a529-12bd11800f24","name":"e2011751-41c0-488a-a529-12bd11800f24","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
@@ -80,8 +80,8 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8b46c50f-1b76-47b5-90aa-beb4265c67c7","path":"sprites/zombo2_sp/zombo2_sp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"069c7c43-a2f4-4f31-bd45-fa5bbaac2f35","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7d32b462-201d-4416-8d6b-e7082b19a7c7","path":"sprites/zombo2_sp/zombo2_sp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6ca9200a-a222-4b0c-b59d-bca671eaef54","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1fd75fd3-e246-4ce3-a72f-0389aeae2368","path":"sprites/zombo2_sp/zombo2_sp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6bd61513-f316-4960-9569-d586f7400ca1","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e2011751-41c0-488a-a529-12bd11800f24","path":"sprites/zombo2_sp/zombo2_sp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"0ba1b8b4-2f86-4208-8513-b2e975f916eb","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
