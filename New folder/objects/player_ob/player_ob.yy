@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"player_sp",
-    "path":"sprites/player_sp/player_sp.yy",
+    "name":"playerS_sp",
+    "path":"sprites/playerS_sp/playerS_sp.yy",
   },
   "spriteMaskId":null,
   "visible":true,
