@@ -68,8 +68,8 @@ sprite_index = sprite[face];
 
 /// weapon  ///
 
-var _xOffset = lengthdir_x(weaponLength + weaponOffsetDist, aimDir);
-var _yOffset = lengthdir_y(weaponLength + weaponOffsetDist, aimDir);
+var _xOffset = lengthdir_x(weapon.length + weaponOffsetDist, aimDir);
+var _yOffset = lengthdir_y(weapon.length + weaponOffsetDist, aimDir);
 
 if (shootTimer > 0)
 {
@@ -79,9 +79,9 @@ shootTimer --;
 if (left_click && shootTimer <= 0)
 {
 	
-	shootTimer = shootCooldown;
+	shootTimer = weapon.cooldown;
 	
-	var _bulletInst = instance_create_layer(x + _xOffset, centerY + _yOffset, "bullets", bullet1_ob);
+	var _bulletInst = instance_create_layer(x + _xOffset, centerY + _yOffset, "bullets", weapon.bulletOb);
 	
 	with (_bulletInst)
 	{

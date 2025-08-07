@@ -12,5 +12,5 @@ var _weaponYscl = 1;
 	}
 
 
-draw_sprite_ext(gun1_sp, 0, x + xOffset, centerY + yOffset, 1, _weaponYscl, aimDir, c_white, 1);
+draw_sprite_ext(weapon.sprite, 0, x + xOffset, centerY + yOffset, 1, _weaponYscl, aimDir, c_white, 1);
 }

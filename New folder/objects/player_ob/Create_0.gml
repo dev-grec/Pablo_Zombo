@@ -20,7 +20,14 @@ face = 3;
 
 ///weapon
 shootTimer = 0;
-shootCooldown = 18;
 
-bulletObject = bullet1_ob;
-weaponLength = sprite_get_bbox_right(gun1_sp) - sprite_get_xoffset(gun1_sp);
+
+
+
+
+
+weapon = global.weaponList.gun1;
+
+
+
+
