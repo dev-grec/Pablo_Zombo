@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"player_ob",
+  "%Name":"bullet1_ob",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"player_ob",
+  "name":"bullet1_ob",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"playerS_sp",
-    "path":"sprites/playerS_sp/playerS_sp.yy",
+    "name":"bullet1_sp",
+    "path":"sprites/bullet1_sp/bullet1_sp.yy",
   },
   "spriteMaskId":null,
   "visible":true,

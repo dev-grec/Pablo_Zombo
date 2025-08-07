@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"player_ob",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"zombo3_ob",
+  "eventList":[],
   "managed":true,
-  "name":"player_ob",
+  "name":"zombo3_ob",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"playerS_sp",
-    "path":"sprites/playerS_sp/playerS_sp.yy",
+    "name":"zombo3_sp",
+    "path":"sprites/zombo3_sp/zombo3_sp.yy",
   },
   "spriteMaskId":null,
   "visible":true,

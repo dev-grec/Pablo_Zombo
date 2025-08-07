@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"zombo2_o",
+  "%Name":"camera_ob",
   "eventList":[],
   "managed":true,
-  "name":"zombo2_o",
+  "name":"camera_ob",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"zombo2_sp",
-    "path":"sprites/zombo2_sp/zombo2_sp.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
