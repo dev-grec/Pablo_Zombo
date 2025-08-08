@@ -5,6 +5,12 @@ x += xspd;
 y += yspd;
 
 
+if (hitConfirm == true) && (enemyDestory == true)
+{
+	destroy = true; 
+} 
+
+
 if (destroy == true)
 {
 	instance_destroy();

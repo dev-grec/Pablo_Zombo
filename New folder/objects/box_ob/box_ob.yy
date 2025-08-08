@@ -1,22 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"enemyParent_ob",
+  "%Name":"box_ob",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"enemyParent_ob",
+  "name":"box_ob",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"damagePlayer_ob",
-    "path":"objects/damagePlayer_ob/damagePlayer_ob.yy",
+    "name":"wall_ob",
+    "path":"objects/wall_ob/wall_ob.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"box_sp",
+    "path":"sprites/box_sp/box_sp.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

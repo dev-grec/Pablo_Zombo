@@ -1,13 +1,25 @@
 
 
 /// chase player ///
+var _disToPlayer = point_distance(x, y, player_ob.x, player_ob.y);
+
 if instance_exists(player_ob)
 {
-dir = point_direction(x, y, player_ob.x, player_ob.y);
+	dir = point_direction(x, y, player_ob.x, player_ob.y);
+		if _disToPlayer <= maxDist
+		{
+			xspd = lengthdir_x(spd, dir);
+			yspd = lengthdir_y(spd, dir);
+		} else {
+			xspd = 0;
+			yspd = 0;
 }
 
-xspd = lengthdir_x(spd, dir);
-yspd = lengthdir_y(spd, dir);
+
+
+}
+
+
 
 if (place_meeting(x + xspd, y, wall_ob)) || (place_meeting(x + xspd, y, enemyParent_ob))
 {

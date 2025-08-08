@@ -6,20 +6,21 @@ var left_key = keyboard_check(ord("A")) ||  keyboard_check(vk_left);
 var right_key = keyboard_check(ord("D")) ||  keyboard_check(vk_right);
 var left_click = mouse_check_button(mb_left);
 var swapKeyPressed = mouse_check_button_pressed(mb_right);
-
-
 var _horizKey = right_key - left_key;
 var _vertKey = down_key - up_key;
 moveDir = point_direction (0,0,_horizKey,_vertKey);
+
+
 /// get the x and y speeds ///
 var _spd = 0;
 var _inputLevel = point_distance(0, 0, _horizKey, _vertKey);
-_inputLevel = clamp(_inputLevel, 0, 1);
+///_inputLevel = clamp(_inputLevel, 0, 1);
 _spd = movespd * _inputLevel;
 xspd = lengthdir_x (_spd, moveDir);
 yspd = lengthdir_y (_spd, moveDir);
 
-
+/// get damaged ///
+get_damage(damagePlayer_ob, true);
 
 /// cutscenes ///
 if instance_exists(pauser_ob)

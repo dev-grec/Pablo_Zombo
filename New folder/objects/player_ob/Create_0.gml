@@ -1,3 +1,6 @@
+///damage setup
+get_damaged_create(20, true);
+
 ///movement
 xspd = 0;
 yspd = 0;

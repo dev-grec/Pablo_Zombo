@@ -1,18 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"camera_ob",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"damagePlayer_ob",
+  "eventList":[],
   "managed":true,
-  "name":"camera_ob",
+  "name":"damagePlayer_ob",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"damageParent_ob",
+    "path":"objects/damageParent_ob/damageParent_ob.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
