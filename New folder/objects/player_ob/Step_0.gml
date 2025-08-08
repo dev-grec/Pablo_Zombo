@@ -5,6 +5,7 @@ var down_key = keyboard_check(ord("S")) || keyboard_check(vk_down);
 var left_key = keyboard_check(ord("A")) ||  keyboard_check(vk_left);
 var right_key = keyboard_check(ord("D")) ||  keyboard_check(vk_right);
 var left_click = mouse_check_button(mb_left);
+var swapKeyPressed = mouse_check_button_pressed(mb_right);
 
 
 var _horizKey = right_key - left_key;
@@ -66,10 +67,26 @@ mask_index = sprite[3];
 sprite_index = sprite[face];
 
 
-/// weapon  ///
 
-var _xOffset = lengthdir_x(weapon.length + weaponOffsetDist, aimDir);
-var _yOffset = lengthdir_y(weapon.length + weaponOffsetDist, aimDir);
+/// weapon  ///
+var _playerWeapons = global.playerWeapons;
+
+
+
+
+if (swapKeyPressed)
+{
+	selectedWeapon++;
+	
+	if (selectedWeapon >= array_length(_playerWeapons))
+	{
+		selectedWeapon = 0;
+	}
+	weapon = _playerWeapons[selectedWeapon];
+}
+
+
+
 
 if (shootTimer > 0)
 {
@@ -81,12 +98,28 @@ if (left_click && shootTimer <= 0)
 	
 	shootTimer = weapon.cooldown;
 	
-	var _bulletInst = instance_create_layer(x + _xOffset, centerY + _yOffset, "bullets", weapon.bulletOb);
+	var _xOffset = lengthdir_x(weapon.length + weaponOffsetDist, aimDir);
+	var _yOffset = lengthdir_y(weapon.length + weaponOffsetDist, aimDir);
+
+	var _spread = weapon.spread;
+	var _spreadDiv = _spread / max(weapon.bulletNum-1, 1);
+
+	for (var i = 0; i < weapon.bulletNum; i++){
+		
+		var _bulletInst = instance_create_layer(x + _xOffset, centerY + _yOffset, "bullets", weapon.bulletOb);
 	
-	with (_bulletInst)
-	{
-		dir = other.aimDir;
+		with (_bulletInst)
+		{
+			dir = other.aimDir - _spread / 2 + _spreadDiv*i;
+			if (dirFix = true)
+			{
+				image_angle = dir;
+			}
+		}
+		
 	}
+
+
 }
 
 

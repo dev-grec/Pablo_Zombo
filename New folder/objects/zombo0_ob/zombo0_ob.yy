@@ -1,20 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"bullet1_ob",
+  "%Name":"zombo0_ob",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"bullet1_ob",
+  "name":"zombo0_ob",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"damageEnemy_ob",
-    "path":"objects/damageEnemy_ob/damageEnemy_ob.yy",
+    "name":"enemyParent_ob",
+    "path":"objects/enemyParent_ob/enemyParent_ob.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"bullet1_sp",
-    "path":"sprites/bullet1_sp/bullet1_sp.yy",
+    "name":"zombo0S_sp",
+    "path":"sprites/zombo0S_sp/zombo0S_sp.yy",
   },
   "spriteMaskId":null,
   "visible":true,

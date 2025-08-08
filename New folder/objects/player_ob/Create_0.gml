@@ -20,13 +20,10 @@ face = 3;
 
 ///weapon
 shootTimer = 0;
+array_push(global.playerWeapons, global.weaponList.gun1);
 
-
-
-
-
-
-weapon = global.weaponList.gun1;
+selectedWeapon = 0;
+weapon = global.playerWeapons[selectedWeapon];
 
 
 
