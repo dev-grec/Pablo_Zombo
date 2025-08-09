@@ -1,7 +1,15 @@
-/// @description Insert description here
-// You can write your code in this editor
 
-// Inherit the parent event
 event_inherited();
 
-spd = 12;
+dir = 0;
+spd = 2;
+xspd = 0;
+yspd = 0;
+damage = 8;
+
+state = 0;
+
+
+//cleaenup//
+destroy = false;
+playerDestroy = true;

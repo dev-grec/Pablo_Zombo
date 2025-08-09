@@ -14,4 +14,3 @@ if (aimDir >= 180 && aimDir < 360)
 }
 
 
-draw_text(x, y, string(hp))

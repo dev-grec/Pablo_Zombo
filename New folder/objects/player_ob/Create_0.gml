@@ -1,5 +1,5 @@
 ///damage setup
-get_damaged_create(20, true);
+get_damaged_create(25, true);
 
 ///movement
 xspd = 0;
@@ -23,11 +23,12 @@ face = 3;
 
 ///weapon
 shootTimer = 0;
-array_push(global.playerWeapons, global.weaponList.gun1);
+array_push(global.playerWeapons, global.weaponList.gun1, global.weaponList.gun2);
 
 selectedWeapon = 0;
 weapon = global.playerWeapons[selectedWeapon];
 
-
+hp = 25;
+hpMax = 25;
 
 

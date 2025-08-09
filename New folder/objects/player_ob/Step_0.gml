@@ -1,11 +1,11 @@
 
 /// keys ///
-var up_key = keyboard_check(ord("W")) ||  keyboard_check(vk_up);
-var down_key = keyboard_check(ord("S")) || keyboard_check(vk_down);
-var left_key = keyboard_check(ord("A")) ||  keyboard_check(vk_left);
-var right_key = keyboard_check(ord("D")) ||  keyboard_check(vk_right);
-var left_click = mouse_check_button(mb_left);
-var swapKeyPressed = mouse_check_button_pressed(mb_right);
+var up_key = global.upKey;
+var down_key = global.downKey;
+var left_key = global.leftKey;
+var right_key = global.rightKey;
+var left_click = global.shootKey;
+var swapKeyPressed = global.swapKey;
 var _horizKey = right_key - left_key;
 var _vertKey = down_key - up_key;
 moveDir = point_direction (0,0,_horizKey,_vertKey);
@@ -72,9 +72,6 @@ sprite_index = sprite[face];
 /// weapon  ///
 var _playerWeapons = global.playerWeapons;
 
-
-
-
 if (swapKeyPressed)
 {
 	selectedWeapon++;
@@ -107,7 +104,9 @@ if (left_click && shootTimer <= 0)
 
 	for (var i = 0; i < weapon.bulletNum; i++){
 		
+		
 		var _bulletInst = instance_create_layer(x + _xOffset, centerY + _yOffset, "bullets", weapon.bulletOb);
+		
 	
 		with (_bulletInst)
 		{
@@ -117,14 +116,16 @@ if (left_click && shootTimer <= 0)
 				image_angle = dir;
 			}
 		}
-		
 	}
-
-
 }
 
 
-
+if hp <= 0
+{
+	instance_create_layer(0, 0, "kings", gameOver_ob);
+	instance_destroy();
+	exit;
+}
 
 
 

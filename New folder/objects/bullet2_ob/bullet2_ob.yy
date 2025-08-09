@@ -3,6 +3,7 @@
   "%Name":"bullet2_ob",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"bullet2_ob",
@@ -12,8 +13,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"bullet1_ob",
-    "path":"objects/bullet1_ob/bullet1_ob.yy",
+    "name":"damagePlayer_ob",
+    "path":"objects/damagePlayer_ob/damagePlayer_ob.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -25,8 +25,18 @@ global.weaponList = {
 	gun1_sp,
 	sprite_get_bbox_right(gun1_sp) - sprite_get_xoffset(gun1_sp),
 	bullet1_ob,
-	12
+	8
 	),
+	
+	gun2 : new create_weapon(
+	gun2_sp,
+	sprite_get_bbox_right(gun2_sp) - sprite_get_xoffset(gun2_sp),
+	bullet3_ob,
+	65,
+	6,
+	45
+	),
+	
 	
 }
 

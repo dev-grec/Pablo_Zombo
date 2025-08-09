@@ -1,7 +1,11 @@
 {
   "$GMObject":"",
   "%Name":"zombo2_ob",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"zombo2_ob",
   "overriddenProperties":[],
@@ -9,7 +13,10 @@
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"enemyParent_ob",
+    "path":"objects/enemyParent_ob/enemyParent_ob.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"zombo2_sp",
-    "path":"sprites/zombo2_sp/zombo2_sp.yy",
+    "name":"zombo2S_sp",
+    "path":"sprites/zombo2S_sp/zombo2S_sp.yy",
   },
   "spriteMaskId":null,
   "visible":true,
