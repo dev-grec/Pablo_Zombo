@@ -10,6 +10,10 @@ if instance_exists(music2_ob)
 {
 audio_stop_sound(music2_sd)
 }
+if instance_exists(boos1_sd)
+{
+audio_stop_sound(boos1_sd)
+}
 
 audio_play_sound(musicDeath_sd, 1, 0);
 

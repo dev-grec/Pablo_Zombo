@@ -6,6 +6,7 @@ switch (state)
 		if instance_exists(player_ob)
 		{
 			dir = point_direction(x, y, player_ob.x, player_ob.centerY);
+			image_angle = dir;
 		}
 		
 		

@@ -14,5 +14,5 @@ if (dir >= 180 && dir < 360)
 }
 
 var _healthPercent = hp / hpMax;
-var _hpImage = _healthPercent * (sprite_get_number(healthBar1_sp) - 1);
-draw_sprite(healthBar1_sp, _hpImage, x, y - sprite_height - 1);
+var _hpImage = _healthPercent * (sprite_get_number(healthBar3_sp) - 1);
+draw_sprite(healthBar3_sp, _hpImage, x, y - sprite_height - 1);

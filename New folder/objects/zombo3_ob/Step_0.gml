@@ -10,8 +10,8 @@ switch (state)
 		}
 		spd = chaseSpd;
 		
-		x += spd;
-		y += spd;
+		xspd = lengthdir_x(spd, dir);
+		yspd = lengthdir_y(spd, dir);
 	
 	/*var _camLeft = camera_get_view_x(view_camera[0]);
 	var _camRight = _camLeft + camera_get_view_width(view_camera[0]);

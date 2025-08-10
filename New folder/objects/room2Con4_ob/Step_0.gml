@@ -8,7 +8,7 @@ if instance_exists(player_ob)
 {
 	var _gateList = ds_list_create();
 	collision_rectangle_list(x, y, bbox_right, bbox_bottom, gateKing_ob, true, false, _gateList, false);
-	var _inRoom = collision_rectangle(x + 10, y + 10, x + roomW - 10, y + roomH - 10, player_ob, false, true);
+	var _inRoom = collision_rectangle(x + 10, y + 10, x + 120 , y + roomH - 10, player_ob, false, true);
 	if (_inRoom)
 	{
 		/// gates
@@ -63,6 +63,7 @@ if instance_exists(player_ob)
 		var _EinRoom = collision_rectangle(x + 10, y + 10, x + roomW - 10, y + roomH - 10, enemyParent_ob, false, true);
 		if (!_EinRoom)
 		{
+			instance_create_layer(noGo_ob.x, noGo_ob.y, "bullets", warp2_ob);
 			instance_destroy(gate_ob);
 			instance_destroy(self);
 		}

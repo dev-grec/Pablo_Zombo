@@ -6,10 +6,10 @@ spawned1 = false;
 spawned2 = false;
 spawned3 = false;
 
-zombo0Num = 16;
-zombo1Num = 7;
-zombo2Num = 15;
-zombo3Num = 8;
+zombo0Num = 4;
+zombo1Num = 1;
+zombo2Num = 2;
+zombo3Num = 3;
 
 allEnemies = zombo0Num + zombo1Num + zombo2Num + zombo3Num;
 

@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"bullet2_sp",
-    "path":"sprites/bullet2_sp/bullet2_sp.yy",
+    "name":"pabloBullet_sp",
+    "path":"sprites/pabloBullet_sp/pabloBullet_sp.yy",
   },
   "spriteMaskId":null,
   "visible":true,
