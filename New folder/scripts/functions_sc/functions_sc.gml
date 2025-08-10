@@ -15,6 +15,29 @@ var _weaponYscl = 1;
 draw_sprite_ext(weapon.sprite, 0, x + xOffset, centerY + yOffset, 1, _weaponYscl, aimDir, c_white, 1);
 }
 
+function draw_weapon2()
+{
+	
+
+	
+	if instance_exists(player_ob)
+	{
+	dir = point_direction(x, y, player_ob.x, player_ob.y);
+	}
+	var xOffset = lengthdir_x(weaponOffsetDist, dir);
+	var yOffset = lengthdir_y(weaponOffsetDist, dir);
+
+	var _weaponYscl = 1;
+
+		if (dir > 90 && dir < 270)
+		{
+			_weaponYscl = -1;
+		}
+
+
+	draw_sprite_ext(gun1_sp, 0, x + xOffset, centerY + yOffset, 1, _weaponYscl, dir, c_white, 1);
+}
+
 function get_damaged_create(_hp = 10, _iframes = false)
 {
 	hpMax = _hp;

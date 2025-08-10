@@ -63,7 +63,7 @@ if instance_exists(player_ob)
 		var _EinRoom = collision_rectangle(x + 10, y + 10, x + roomW - 10, y + roomH - 10, enemyParent_ob, false, true);
 		if (!_EinRoom)
 		{
-			instance_create_layer(1490, 360, "doors", warp_ob);
+			instance_create_layer(noGo_ob.x, noGo_ob.y, "doors", warp_ob);
 			instance_destroy(gate_ob);
 			instance_destroy(self);
 		}

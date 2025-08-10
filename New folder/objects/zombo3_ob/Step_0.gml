@@ -4,11 +4,14 @@
 switch (state)
 {
 	case 0:
-	if instance_exists(player_ob)
-	{
-		dir = point_direction(x, y, player_ob.x, player_ob.y);
-	}
-	spd = chaseSpd;
+		if instance_exists(player_ob)
+		{
+			dir = point_direction(x, y, player_ob.x, player_ob.y);
+		}
+		spd = chaseSpd;
+		
+		x += spd;
+		y += spd;
 	
 	/*var _camLeft = camera_get_view_x(view_camera[0]);
 	var _camRight = _camLeft + camera_get_view_width(view_camera[0]);
@@ -19,21 +22,21 @@ switch (state)
 	{
 	shootTimer++;
 	}*/
-if instance_exists(player_ob)
-{
-	if point_distance(x, y, player_ob.x, player_ob.y) <= maxDist
-	{
-	shootTimer++;
-	} else {
-		shootTimer = shootTimer;
-	}
+		if instance_exists(player_ob)
+		{
+			if point_distance(x, y, player_ob.x, player_ob.y) <= maxDist
+			{
+			shootTimer++;
+			} else {
+				shootTimer = shootTimer;
+			}
 	
-	if shootTimer > cooldownTime
-	{
-		state = 1;
-		shootTimer = 0;
-	}
-}
+			if shootTimer > cooldownTime
+			{
+				state = 1;
+				shootTimer = 0;
+			}
+		}
 	break;
 	
 	case 1:
