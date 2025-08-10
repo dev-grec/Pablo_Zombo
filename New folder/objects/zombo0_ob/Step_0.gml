@@ -35,6 +35,7 @@ if (place_meeting(x, y + yspd, wall_ob)) || (place_meeting(x, y + yspd, enemyPar
 
 
 
+
 x += xspd;
 y += yspd;
 
