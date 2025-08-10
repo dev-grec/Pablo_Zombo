@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"warp_sp",
+    "path":"sprites/warp_sp/warp_sp.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

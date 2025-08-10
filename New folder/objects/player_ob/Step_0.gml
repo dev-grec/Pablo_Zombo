@@ -93,7 +93,7 @@ shootTimer --;
 
 if (left_click && shootTimer <= 0)
 {
-	
+	audio_play_sound(gun_sd, 1, 0);
 	shootTimer = weapon.cooldown;
 	
 	var _xOffset = lengthdir_x(weapon.length + weaponOffsetDist, aimDir);

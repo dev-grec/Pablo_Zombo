@@ -1,0 +1,1 @@
+audio_play_sound(music1_sd, 1, 1);

@@ -84,6 +84,7 @@ image_alpha = 1;
 				{
 					ds_list_add(damageList, _inst);
 				}
+			audio_play_sound(hit_sd, 1, 0);
 			hp -= _inst.damage;
 			_hitConfirm = true;
 			_inst.hitConfirm = true; 

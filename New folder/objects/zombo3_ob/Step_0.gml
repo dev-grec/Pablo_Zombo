@@ -49,6 +49,7 @@ if instance_exists(player_ob)
 	shootTimer ++;
 	if shootTimer == 1
 	{
+		audio_play_sound(wizard_sd, 1, 0);
 		bulletInst = instance_create_layer(x + bulletXoff, y + bulletYoff, "bullets", bullet2_ob);
 	}
 	
@@ -60,7 +61,7 @@ if instance_exists(player_ob)
 	if shootTimer > windupTime + recoverTime
 	{
 		state = 0;
-		
+		audio_stop_sound(wizard_sd);
 		shootTimer = 0;
 	}
 	
